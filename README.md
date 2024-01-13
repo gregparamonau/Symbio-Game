@@ -1,10 +1,10 @@
 # Symbio-Game
-16 year old student making a game (grade 11)
-Coding this using Java + Eclipse
-Metroidvania Game about a small robot who was injected into a sick person to fight with the illnesses they are suffering with
-The plan is mostly that the robot (the player) will travel through many different organs of the sick person and fight and platform their way through it, and hopefully heal the patient
+16 year old student making a game (grade 11). 
+Coding this using Java + Eclipse. 
+Metroidvania Game about a small robot who was injected into a sick person to fight with the illnesses they are suffering with. 
+The plan is mostly that the robot (the player) will travel through many different organs of the sick person and fight and platform their way through it, and hopefully heal the patient. 
 
-Current plan (subject to change):
+Current plan (subject to change):\n
 Areas:
   
     Skin (entrance)

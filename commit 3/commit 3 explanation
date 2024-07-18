@@ -1,0 +1,27 @@
+in this commit, i completely revamped the level editor, where I made it easier to understand, easier to add new item options, and more flexible in terms of use
+I also changed a bit how rooms work
+
+Level Editor Changes:
+
+I also simplified the UI, and changed a couple core ways in which it works, namely:
+        --> the properties panel has now been replaced with a properties window that opens up when you double click on an object
+        --> made the controls more sophisticated, including improving visuals
+        --> remade saving and loading methods (maybe I did that last time I forget)
+Biggest change:
+        --> I changed the way the whole level_editor is structured. Now there are 3 classes instead of the 1 LevelCreator class in previous versions:
+                LevelEditor, GameEditor and RoomEditor.
+        --> these 3 classes simplify the system I have in place, and revamp it: mainly that now instead of typing in the room you want to edit as a number,
+                there is now a visual display of the entire map of the game & all the rooms in it. This display can be navigated by using arrow keys, 
+                and double clicking on rooms to edit them, but most importantly, it shows how all the rooms are placed in the world relative to one another.
+        --> The GameEditor class deals with all the rooms, and allows that to be edited and navigated
+        --> The RoomEditor class allows the user to double click on a room when in 'GameEditor' mode, and to transition inside it and edit the contents of the room itself
+        --> The LevelEditor class deals with things like graphics, game loop, movement, and controls, in addition to transitions between GameEditor and RoomEditor
+
+
+Game Changes:
+
+I Changed the way in which rooms & room transitions work now. 
+        --> Once the game is started, an array of rectangles is created from the bounding boxes of all the rooms in the game. 
+        --> Every frame, a method checks which bounding box the player intersects with, and if the index of that rectangle is not equal
+                to the index of the currently loaded room, another method is called to unload the current room, and load the one the player intersects with.
+        --> If no room can be found that the player intersects with, the player is killed and respawned inside the last room they were in.

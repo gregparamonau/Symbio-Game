@@ -1,104 +1,29 @@
-30 
-0 -2187 1312 75 2825 /platform_textures/plat_0.png 
-0 287 1400 2525 50 /platform_textures/plat_0.png 
-0 -1000 1850 50 950 /platform_textures/plat_0.png 
-0 1850 1825 50 900 /platform_textures/plat_0.png 
-0 75 2687 4450 75 /platform_textures/plat_0.png 
-0 450 2300 2850 50 /platform_textures/plat_0.png 
-0 937 950 325 50 /platform_textures/plat_0.png 
-0 350 650 350 50 /platform_textures/plat_0.png 
-0 -362 300 375 50 /platform_textures/plat_0.png 
-0 862 25 325 250 /platform_textures/plat_0.png 
-0 600 125 200 50 /platform_textures/plat_0.png 
-0 -1225 362 50 375 /platform_textures/plat_0.png 
-0 -737 950 275 50 /platform_textures/plat_0.png 
-0 -250 1125 300 50 /platform_textures/plat_0.png 
-0 -1600 2062 50 525 /platform_textures/plat_0.png 
-0 -1600 1437 50 325 /platform_textures/plat_0.png 
-0 3737 2187 2875 1075 /platform_textures/plat_0.png 
-0 1475 -137 7400 75 /platform_textures/plat_0.png 
-0 5137 775 75 1750 /platform_textures/plat_0.png 
-0 -900 1487 150 125 /platform_textures/plat_0.png 
-0 -50 1537 100 25 /platform_textures/plat_0.png 
-0 375 1537 100 25 /platform_textures/plat_0.png 
-0 800 1537 100 25 /platform_textures/plat_0.png 
-0 1462 1487 175 125 /platform_textures/plat_0.png 
-2 1462 1562 125 25 /platform_textures/plat_2.png 
-2 -900 1562 100 25 /platform_textures/plat_2.png 
-1 275 1437 2200 25 /platform_textures/plat_1.png 
-0 -475 1537 100 25 /platform_textures/plat_0.png 
-0 1150 1537 100 25 /platform_textures/plat_0.png 
-0 -1675 787 100 25 /platform_textures/plat_0.png 
-29 
-hair 1987 362 25 925 
-hair 1787 250 25 700 
-hair 1587 337 25 875 
-hair 1387 475 25 1150 
-bouncer -475 1562 0 
-bouncer -50 1562 0 
-bouncer 375 1562 0 
-bouncer 800 1562 0 
-bouncer 1150 1562 0 
-bouncer -1675 -87 0 
-bouncer -2137 325 2 
-bouncer -1262 325 1 
-bouncer -1675 762 3 
-mover 100 25 8 100 375 200 475 300 475 400 375 400 275 300 175 200 175 100 275 
-mover 100 25 2 -1050 700 -575 400 
-bouncer -1450 -87 0 
-hair 2237 325 25 850 
-hair 2487 475 25 1150 
-hair 2737 375 25 950 
-hair 2937 425 25 1050 
-hair 3137 612 25 1425 
-hair 3362 337 25 875 
-hair 3587 400 25 1000 
-hair 3787 312 25 825 
-hair 4012 562 25 1325 
-hair 4212 387 25 975 
-hair 4437 612 25 1425 
-hair 4662 375 25 950 
-hair 4887 125 25 450 
-42 
--362 212 375 175 /extra_textures/back_sprite_sheet_1.png 
--150 75 50 200 /extra_textures/back_sprite_sheet_2.png 
--337 50 325 150 /extra_textures/back_sprite_sheet_2.png 
--262 -75 375 100 /extra_textures/back_sprite_sheet_2.png 
-625 0 200 250 /extra_textures/back_sprite_sheet_1.png 
-475 -62 100 125 /extra_textures/back_sprite_sheet_1.png 
-937 962 575 325 /extra_textures/back_sprite_sheet_1.png 
-637 812 625 125 /extra_textures/back_sprite_sheet_1.png 
-450 700 550 100 /extra_textures/back_sprite_sheet_1.png 
-1237 1262 375 275 /extra_textures/back_sprite_sheet_1.png 
-1475 1350 100 100 /extra_textures/back_sprite_sheet_1.png 
-937 1212 225 175 /extra_textures/back_sprite_sheet_1.png 
-587 962 125 175 /extra_textures/back_sprite_sheet_1.png 
-1287 1075 125 100 /extra_textures/back_sprite_sheet_1.png 
-987 1637 325 425 /extra_textures/back_sprite_sheet_1.png 
-462 1775 725 200 /extra_textures/back_sprite_sheet_1.png 
-737 1637 175 125 /extra_textures/back_sprite_sheet_1.png 
-1275 1550 250 250 /extra_textures/back_sprite_sheet_1.png 
-25 1550 200 250 /extra_textures/back_sprite_sheet_1.png 
-187 1600 125 150 /extra_textures/back_sprite_sheet_1.png 
--487 1225 475 350 /extra_textures/back_sprite_sheet_1.png 
--625 1025 450 250 /extra_textures/back_sprite_sheet_1.png 
--1600 1487 300 275 /extra_textures/back_sprite_sheet_1.png 
--1625 2012 250 425 /extra_textures/back_sprite_sheet_1.png 
--1625 1712 200 175 /extra_textures/back_sprite_sheet_1.png 
--112 2487 275 375 /extra_textures/back_sprite_sheet_1.png 
--337 2400 175 200 /extra_textures/back_sprite_sheet_1.png 
-87 2600 125 150 /extra_textures/back_sprite_sheet_1.png 
-2012 2412 625 525 /extra_textures/back_sprite_sheet_1.png 
-2200 2025 250 250 /extra_textures/back_sprite_sheet_1.png 
-1562 2562 275 225 /extra_textures/back_sprite_sheet_1.png 
-1675 37 800 325 /extra_textures/back_sprite_sheet_1.png 
-1587 362 475 325 /extra_textures/back_sprite_sheet_1.png 
-1862 687 425 325 /extra_textures/back_sprite_sheet_1.png 
-2100 1012 400 325 /extra_textures/back_sprite_sheet_1.png 
-2312 1287 325 225 /extra_textures/back_sprite_sheet_1.png 
-2587 1537 425 275 /extra_textures/back_sprite_sheet_1.png 
-3100 75 400 400 /extra_textures/back_sprite_sheet_1.png 
-2762 12 275 275 /extra_textures/back_sprite_sheet_1.png 
-3187 387 225 225 /extra_textures/back_sprite_sheet_1.png 
-3462 125 325 500 /extra_textures/back_sprite_sheet_1.png 
-3800 0 350 250 /extra_textures/back_sprite_sheet_1.png 
+-40 24 80.0 48.0 
+14 
+object -1.0 24.0 2.0 48.0 /object_textures/mouth.png 
+object -47.0 1.0 66.0 2.0 /object_textures/mouth.png 
+object -41.0 47.0 78.0 2.0 /object_textures/mouth.png 
+object -79.0 24.0 2.0 44.0 /object_textures/mouth.png 
+bouncer -77.5 14.5 2 -1 /object_textures/bounce.png 
+bouncer -64.5 2.5 0 -1 /object_textures/bounce.png 
+oneway -71.0 27.5 14.0 1.0 0 -1 /object_textures/oneway.png 
+oneway -40.0 16.5 16.0 1.0 0 -1 /object_textures/oneway.png 
+mover 5.0 2.0 2.56 -1.0 2 -32.0 32.0 -13.0 24.0 -1 /object_textures/mouth.png 
+slope -56.0 2.0 -48.0 7.0 -1 /object_textures/mouth.png 
+slope -40.0 2.0 -48.0 7.0 -1 /object_textures/mouth.png 
+bouncer -32.0 33.5 0 8 /object_textures/bounce.png 
+mover 9.0 2.0 2.56 -1.0 2 -56.0 54.0 -40.0 54.0 -1 /object_textures/mouth.png 
+mover 8.0 2.0 2.56 -1.0 2 -40.0 42.0 -40.0 30.0 12 /object_textures/mouth.png 
+24 -24 80.0 48.0 
+11 
+object -15.0 -24.0 2.0 48.0 /object_textures/mouth.png 
+object 25.0 -47.0 78.0 2.0 /object_textures/mouth.png 
+object 63.0 -23.0 2.0 46.0 /object_textures/mouth.png 
+object 30.0 -1.0 64.0 2.0 /object_textures/mouth.png 
+object -7.0 -42.5 14.0 7.0 /object_textures/mouth.png 
+object 24.0 -42.5 16.0 7.0 /object_textures/mouth.png 
+object 55.0 -42.5 14.0 7.0 /object_textures/mouth.png 
+acid 8.0 -43.0 16.0 6.0 /object_textures/acid.png 
+acid 40.0 -43.0 16.0 6.0 /object_textures/acid.png 
+mover 1.0 1.0 2.56 5.0 2 0.0 -16.0 48.0 -16.0 -1 /object_textures/mouth.png 
+circle 0.0 -16.0 6.0 9 /object_textures/mouth.png 

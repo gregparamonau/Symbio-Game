@@ -1,1 +1,22 @@
-asfkjasdhfkasjdfh
+Changes made over the past month:
+
+first change is that I implemented a very basic but functional main and pause menu,
+which show up when you start the game and pause the game respectively
+      -> they use buttons & you can press them with a mouse
+
+I added health to the player, which for now defaults to 3, and subtracts 1 every time the player takes damage
+There is no death state yet, so if the player loses all their health, they just respawn with full health
+
+Added 2 new objects to the game:
+      -> acid, which deals damage to the player, and is also procedurally animated to look like it has bubbles rising in it
+      -> added 1 way platforms which can be placed in 4 different directions if needed
+            -> so far its impossible to jump back down through them, but I might add that functionality later
+      -> added sprites for these two platforms as well
+
+added extra functionality to movers, which allows you to attach any object type to a mover:
+      -> this works by adding an attribute which i called 'object_handle', an integer specifying the id of the mover said object is attached to
+      -> this works by moving said object by the distance that the mover moved in that frame, and updates that every frame
+      -> its important to note that the array of objects has to be sorted when being saved so that objects appear after the mover they are attached to, so that the update order remains correct
+
+finally, i added a class & file called settings, which for now stores all the key imputs of different actions in the game, but will later store other settings that are important for performance etc.
+

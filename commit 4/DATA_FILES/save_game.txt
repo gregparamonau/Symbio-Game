@@ -1,0 +1,29 @@
+-40 24 80.0 48.0 
+14 
+object -1.0 24.0 2.0 48.0 /object_textures/mouth.png 
+object -47.0 1.0 66.0 2.0 /object_textures/mouth.png 
+object -41.0 47.0 78.0 2.0 /object_textures/mouth.png 
+object -79.0 24.0 2.0 44.0 /object_textures/mouth.png 
+bouncer -77.5 14.5 2 -1 /object_textures/bounce.png 
+bouncer -64.5 2.5 0 -1 /object_textures/bounce.png 
+oneway -71.0 27.5 14.0 1.0 0 -1 /object_textures/oneway.png 
+oneway -40.0 16.5 16.0 1.0 0 -1 /object_textures/oneway.png 
+mover 5.0 2.0 2.56 -1.0 2 -32.0 32.0 -13.0 24.0 -1 /object_textures/mouth.png 
+slope -56.0 2.0 -48.0 7.0 -1 /object_textures/mouth.png 
+slope -40.0 2.0 -48.0 7.0 -1 /object_textures/mouth.png 
+bouncer -32.0 33.5 0 8 /object_textures/bounce.png 
+mover 9.0 2.0 2.56 -1.0 2 -56.0 54.0 -40.0 54.0 -1 /object_textures/mouth.png 
+mover 8.0 2.0 2.56 -1.0 2 -40.0 42.0 -40.0 30.0 12 /object_textures/mouth.png 
+24 -24 80.0 48.0 
+11 
+object -15.0 -24.0 2.0 48.0 /object_textures/mouth.png 
+object 25.0 -47.0 78.0 2.0 /object_textures/mouth.png 
+object 63.0 -23.0 2.0 46.0 /object_textures/mouth.png 
+object 30.0 -1.0 64.0 2.0 /object_textures/mouth.png 
+object -7.0 -42.5 14.0 7.0 /object_textures/mouth.png 
+object 24.0 -42.5 16.0 7.0 /object_textures/mouth.png 
+object 55.0 -42.5 14.0 7.0 /object_textures/mouth.png 
+acid 8.0 -43.0 16.0 6.0 /object_textures/acid.png 
+acid 40.0 -43.0 16.0 6.0 /object_textures/acid.png 
+mover 1.0 1.0 2.56 5.0 2 0.0 -16.0 48.0 -16.0 -1 /object_textures/mouth.png 
+circle 0.0 -16.0 6.0 9 /object_textures/mouth.png 

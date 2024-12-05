@@ -37,3 +37,4 @@ simple ai() for them made in 3 lines. require animations
 
 -> maybe to simplify life, enemy stats can be written down on text files, and read off when spawning enemies, that way, different attributes
    can be expanded upon without creating separate enemy class.
+-> these can maybe be edited from inside level editor, or new tool called 'enemy editor' responsible for creating everything enemy-related, including attacks, key frames, animations, and ai, with components, although this is ambitious. instead of creating a new class for every enemy, we can instead pass in path to text file containing their info + sprites, and spawn enemies (and manage behavior) using that, although that is still to be seen.

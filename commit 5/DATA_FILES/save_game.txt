@@ -1,0 +1,18 @@
+-24 16 48.0 32.0 
+16 
+object -47.0 17.0 2.0 30.0 -1 /object_textures/mouth.png 
+object -23.0 31.0 46.0 2.0 -1 /object_textures/mouth.png 
+object -1.0 16.0 2.0 28.0 -1 /object_textures/mouth.png 
+spawner -13.0 2.0 1 Enemies.Enemies.Scuttler 0 
+object -39.0 16.0 14.0 2.0 -1 /object_textures/mouth.png 
+object -9.0 16.0 14.0 2.0 -1 /object_textures/mouth.png 
+spawner -4.0 17.0 1 Enemies.Enemies.Scuttler 0 
+spawner -44.0 17.0 1 Enemies.Enemies.Scuttler 0 
+object -24.0 1.0 48.0 2.0 -1 /object_textures/mouth.png 
+circle -35.0 2.0 3.0 -1 /object_textures/mouth.png 
+circle -33.0 16.0 2.0 -1 /object_textures/mouth.png 
+circle -16.0 16.0 2.0 -1 /object_textures/mouth.png 
+acid -24.0 23.5 8.0 3.0 -1 /object_textures/acid.png 
+object -29.0 23.5 2.0 5.0 -1 /object_textures/mouth.png 
+object -24.0 21.5 8.0 1.0 -1 /object_textures/mouth.png 
+object -19.0 23.5 2.0 5.0 -1 /object_textures/mouth.png 

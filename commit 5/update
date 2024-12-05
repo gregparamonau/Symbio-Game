@@ -1,1 +1,39 @@
 In this update, I implemented a system to spawn enemies, and remade moving platforms
+
+Moving platforms:
+  I was unsatisfied how moving platforms seemed to disobey the laws of physics, simply by not decelerating when arriving at their stops
+    and not accelerating when leaving.
+  I altered their move method, to implement the first part of a sine curve, so that their velocity changes gradually over time, and they
+    still cover the required distance between stops of a mover. This has had no effect on their period time, or how fast they complete a cycle
+    which was an important point for me when coding this. Also, I removed the functionality to input the speed of the mover directly in the
+    level editor. Now, the only velocity-related editable attribute is time taken per cycle, so its easier to coordinate and time movers to
+    always align together.
+
+Spawn Enemies:
+-> I decided it was time to introduce enemies into the game, which I have been looking forward to for a very long time, but have been
+    preoccupied with other basic things like collisions and performance.
+-> They way this works, is the following:
+    -> New GameObject class: EnemySpawner, defined by a position, as well as several other attributes:
+      -> Enemy type (String), class with path to enemy being spawned by this spawner
+      -> int enemy_count number of enemies to spawn (unsure whether this would be useful, but added anyways)
+      -> boolean respawn, determining whether enemy gets respawned upon death
+    -> Spawning an enemy:
+      -> Using Java's reflection library, we can create instances of a class (the enemies) at run time, based on a string of class_name
+      -> spawn_enemy() function, creating an enemy object of specified type at location of spawner, and adding it to enemies[] in current_room object
+      -> these enemies are updated, and carry out their function, as well, similar to gameobjects too
+
+-> Enemies & Behavior:
+  -> Enemies have several methods:
+  -> update() -> called every frame, everything enemy-related happens here, including moving, dying, animating (in the future) etc.
+  -> ai() -> method that returns Vector2 that tells enemy's next move, and where theya re going to move next frame.
+  -> displace() -> enemy checks if it is intersecting with any platforms, and if so displaces to their outside, [collision handling]
+
+Next steps:
+  -> enemies need to get health points, death state, animations, sophisticated ai etc.
+  -> Player needs to get proper (better than current) health and damage system implemented, as well as ability to kill / damage enemies
+
+Currently have 1 enemy: Scuttler, which moves back and forth along the ground, and turns around when hitting a wall of when reaching ledge
+simple ai() for them made in 3 lines. require animations
+
+-> maybe to simplify life, enemy stats can be written down on text files, and read off when spawning enemies, that way, different attributes
+   can be expanded upon without creating separate enemy class.

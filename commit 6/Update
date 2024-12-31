@@ -1,1 +1,27 @@
-update written here OOOOOHHHH
+Several key changes were made here:
+  - enemies now deal damage, and can be damaged
+  - player now has slash attack
+  - several edits to player movement
+  - new gameobject --> sprite
+  - revamped ui/menus/organisation
+
+
+1-2. Enemy & Player health / damage
+  I added a slash attack to the player (which acts as a sword swing), and deals damage to enemies in the direction you're facing. Inspired by 
+  Hollow Knight, the slash has 4 directions: left, right, up and down, where the up and down directions are slightly longer in distance so they
+  are less cumbersome to use. Both the player (wielding the sword), and the enemy you're hitting, recieve knowckback upon a successful hit,
+  which can even be used to juggle some enemies around (very fun imo). Upon getting damaged by contact with an enemy, the player also recieves
+  knockback. When down slashing on an enemy, you recieve an extra boost up, allowing you to stay in the air when down hitting enemies. Enemies
+  (currently only the scuttler) have pre-defined damage upon being spawned (20), and the player's attack damage gets subtracted from this every
+  time its hit. if it dips below 0, then the enemy is respawned currently for testing purposes.
+
+3. new player movement
+  Momentum is now conserved when bunny-hopping (buffered jumps), and is even multiplied by 1.2 every jump, which allows for crazy moentum to be
+  acquired. dashes now take into account momentum, and add it to the dash, so with a lot of momentum, the dash is stretched out significantly.
+  wall jumpign with horizontal momentum results in 25 percent of it getting converted to vertical momentum, and the rest reflected. (fun jumps).
+  moving platforms now add their velocity to your momentum, which gives you a speed boost upon jumping (cool). Extra stuff I probably forgot.
+
+4. new game object called 'sprite', which essentially acts as background texture, and can hold single images for now (animations to come)
+
+5. new ui, meaning that all uis (game & level editor) now combined into one main screen to start, with option buttons to choose next steps. 
+    had to write new main class 'start' to hold this.

@@ -1,1 +1,17 @@
-sfdjsahbfjhasdfgnx
+This is a short edit, basically consisting entirely of an animation revamp for the player, as well as enemies and also the acid game object
+
+Animations received a new load method (notably now they are expressed as a long strip of sprites, and one image file can only contain one animation
+rather than the numerous it could before. this significantly reduced the code load, and made it easier to manage different animations.
+
+playing the animation now has a new play() method with the following parameters:
+  - boolean play_pos --> to draw the animation in the following Vector2 loc, or to draw it at it's assigned position (which can btw follow an object
+    because of hidden java pointers (at least that's how I imagine it long story short it works)
+  - Vector2 loc --> position where to draw animation if play_pos is true, if play_pos is false this is usually put as Vector2.zero;
+  - boolean flipv --> boolean as to whether the animation should flip the sprite (no need for 2 animations for both directions of movement)
+  - standard drawing code: Graphics g, JPanel pane, double xin, double yin, String location, which is universal to all drawing methods (most at least)
+
+Acid recieved animation revamp to utilise the power of this new animation method, and improve performance (can handle up to ~10000 particles as far as I know)
+
+Scuttler enemy received new animation (temporary for know because it looks ugly)
+
+player animations have been re-implemented (same animations as before, just improved structure & functionality for easier access to stuff)

@@ -1,0 +1,104 @@
+-24 16 48.0 32.0 
+16 
+object -47.0 17.0 2.0 30.0 -1 /object_textures/mouth.png 
+object -23.0 31.0 46.0 2.0 -1 /object_textures/mouth.png 
+object -1.0 22.0 2.0 16.0 -1 /object_textures/mouth.png 
+spawner -13.0 2.0 1 Enemies.Enemies.Scuttler 0 
+object -39.0 16.0 14.0 2.0 -1 /object_textures/mouth.png 
+object -9.0 16.0 14.0 2.0 -1 /object_textures/mouth.png 
+spawner -4.0 17.0 1 Enemies.Enemies.Scuttler 0 
+spawner -44.0 17.0 1 Enemies.Enemies.Scuttler 0 
+object -24.0 1.0 48.0 2.0 -1 /object_textures/mouth.png 
+circle -16.0 16.0 2.0 -1 /object_textures/mouth.png 
+acid -24.0 23.5 8.0 3.0 -1 /object_textures/acid.png 
+object -29.0 23.5 2.0 5.0 -1 /object_textures/mouth.png 
+object -24.0 21.5 8.0 1.0 -1 /object_textures/mouth.png 
+object -19.0 23.5 2.0 5.0 -1 /object_textures/mouth.png 
+acid -40.0 8.5 12.0 13.0 -1 /object_textures/acid.png 
+object -33.0 8.5 2.0 13.0 -1 /object_textures/mouth.png 
+64 16 128.0 32.0 
+28 
+sprite 71.0 24.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 83.0 19.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 60.0 21.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 64.0 5.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 44.0 19.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 30.0 23.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 18.0 20.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 35.0 12.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 45.0 6.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 18.0 8.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 8.0 16.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 6.0 26.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 6.0 8.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 82.0 7.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 74.0 12.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 96.0 21.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 96.0 7.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 104.0 14.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 114.0 23.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 115.0 14.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 121.0 6.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 109.0 6.0 0 0.0 0.0 /extra_textures/random_back.png 
+object 63.0 1.0 126.0 2.0 -1 /object_textures/mouth.png 
+object 127.0 1.0 2.0 2.0 -1 /object_textures/mouth.png 
+object 71.0 31.0 114.0 2.0 -1 /object_textures/mouth.png 
+object 1.0 23.0 2.0 18.0 -1 /object_textures/mouth.png 
+mover 8.0 2.0 1.0 2 20.0 13.0 48.0 13.0 -1 /object_textures/mouth.png 
+mover 7.0 1.0 5.0 2 60.0 13.0 85.0 13.0 -1 /object_textures/mouth.png 
+16 80 32.0 96.0 
+8 
+object 23.0 33.0 18.0 2.0 -1 /object_textures/mouth.png 
+object 31.0 81.0 2.0 94.0 -1 /object_textures/mouth.png 
+object 15.0 127.0 30.0 2.0 -1 /object_textures/mouth.png 
+object 1.0 79.0 2.0 94.0 -1 /object_textures/mouth.png 
+object 23.0 64.0 14.0 2.0 -1 /object_textures/mouth.png 
+object 23.0 96.0 14.0 2.0 -1 /object_textures/mouth.png 
+spawner 23.0 97.0 1 Enemies.Enemies.Scuttler 0 
+spawner 23.0 65.0 1 Enemies.Enemies.Scuttler 0 
+216 -16 240.0 32.0 
+24 
+sprite 109.0 -11.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 125.0 -17.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 140.0 -8.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 163.0 -15.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 183.0 -8.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 198.0 -18.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 212.0 -6.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 237.0 -17.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 256.0 -7.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 268.0 -18.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 284.0 -13.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 298.0 -9.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 305.0 -18.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 318.0 -15.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 328.0 -6.0 0 0.0 0.0 /extra_textures/random_back.png 
+object 216.0 -31.0 240.0 2.0 -1 /object_textures/mouth.png 
+object 335.0 -15.0 2.0 30.0 -1 /object_textures/mouth.png 
+object 230.0 -1.0 208.0 2.0 -1 /object_textures/mouth.png 
+object 105.0 -1.0 18.0 2.0 -1 /object_textures/mouth.png 
+object 97.0 -16.0 2.0 28.0 -1 /object_textures/mouth.png 
+object 177.0 -25.0 158.0 10.0 -1 /object_textures/mouth.png 
+acid 295.0 -26.0 78.0 8.0 -1 /object_textures/acid.png 
+object 111.0 -9.0 10.0 2.0 -1 /object_textures/mouth.png 
+mover 5.0 1.0 5.0 2 256.0 -7.0 329.0 -7.0 -1 /object_textures/mouth.png 
+232 16 208.0 32.0 
+18 
+sprite 143.0 9.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 159.0 19.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 165.0 11.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 183.0 23.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 195.0 10.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 215.0 26.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 217.0 14.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 236.0 13.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 239.0 22.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 255.0 14.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 271.0 20.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 282.0 5.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 297.0 18.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 313.0 10.0 0 0.0 0.0 /extra_textures/random_back.png 
+sprite 328.0 26.0 0 0.0 0.0 /extra_textures/random_back.png 
+object 232.0 1.0 208.0 2.0 -1 /object_textures/mouth.png 
+object 335.0 17.0 2.0 30.0 -1 /object_textures/mouth.png 
+object 231.0 31.0 206.0 2.0 -1 /object_textures/mouth.png 

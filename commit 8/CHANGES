@@ -1,1 +1,36 @@
-caasd
+Many changes happened here!
+
+1. changed menu and game to be full screen, which came with lots of issues on the UI side
+  a. full screen disalowed the use of JOptionPanes in order to get user input. Specifically in level editor, where object and room
+      proprties relied on them. fixed by creating own custom class
+  b. additionally, rendering using a JPanel became quite annoying, in that it stopped working using g (graphics of pane). force to change
+      rendering to pane.repaint(), which had the added bonus of increasing run speed by around 4x. (from 6-8 ms/frame, to 0-2 ms/frame)
+      to render.
+
+2. force to create custom OptionPane class in order to handle input and output in leveleditor (in place of JOptionPane that was used before)
+  a. two different versions of class
+    i. buttom[] in the class, which is an array of buttons that are displayed, and each have their own function when clicked (encoded as a
+        Runnable).
+    ii. text input functionality, which also has an attached Runnable for what to do with text when player presses 'Enter'
+  b. allows easy encoding of properties for objects and other functionality (much easier than with JOptionPane for me at least)
+  c. Button class also updated to host Runnable instead of string to reference function to execute. Makes code MUCH more concise and modular.
+
+3. Introduced new platform type in game: Bezier curve as terrain. allows to model terrain with round shape and curvature. Had to tackle several issues:
+  a. difficult collision detection. Originally, was attempting to use Newton-Raphson method to find roots of polynomial, but was too expensive
+      and complicated. Opted to represent as array of Lines, and check those for collision with player. set number of subdivisions of Bezier to 20
+      which resulted in weird rendering bugs, so set to 19 since its a less round number, and fixed bugs completely.
+  b. rendering. sprites procedurally generated with code when the room is loaded. makes for very nice terrain (similar to slopes and circles). Added
+      some extra functionality to determine how to render them etc.
+
+4. Separated level editor components of all GameObject classes into separate class that inherits its parent object. eg. BezierTerrainEdit inherits
+    from BezierTerrain and the such. allows for easier and more efficient workflow in the future.
+  a. less complicated and confusing, and dont need to generate sprite everytime for GameObject when in leveleditor, which saves on performance~.
+
+
+NEXT STEPS:
+1. implement Enemy AI framework (in order to begin creating enemies)
+2. generalise create_game_object method in GameObject, so that it is not a million if statements (similarly to how enemies are spawned)
+3. make some ACTUAL player animations
+4. make som ACTUAL level art, not placeholder bs that is there rn
+5. refine player movement (specifically attacking & pogoing), and add all abilities that are intended for the game.
+6. other minor big fixes and irrelevant convenience features.

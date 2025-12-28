@@ -1,1 +1,11 @@
-sdf
+separated all player-related logic into separate files so its easier to manage.
+besides this, nothing else was done, just trying to make the project easier to maintain.
+aim to start reworking movement system (to make better, more consistent, and more smooth)
+aim to implement softbodies as enemies and platforms
+aim to implement sprite-rendering better, and increase amount of parallax layers
+  add foreground, background and midground parallax to help with aesthetic of game
+aim to add visual effects to player movement
+  particles
+  squash and stretch
+  other effects specific to movement type
+aim to start working on story / new environment (first environment) soon after these things are done

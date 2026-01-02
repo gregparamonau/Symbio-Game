@@ -65,6 +65,7 @@ biggest commit yet! I really locked in the last couple days! List of reworked th
 This has been one of the biggest updates yet, stuff to do in next one:
 
 * make sure you can't accidentally get SHOVED inside a bezier when a moving bezier collides with another platform and you're stuck in between
+* OOPS forgot, on similar note, make procedural art creation for moving platforms (and attached ones) separate from global terrain!
 * rework Vector2 class a bit, in order to make functions match SoftBody Vector2 class, and TriangleRendering Test Vector2 class
   * Using this, can now implement softbodies into the game, by simply copying code over
 * also implement platform momentum interractions with the player, and re-make bounce pads since they suck

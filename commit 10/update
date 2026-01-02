@@ -1,1 +1,82 @@
-* added state machine to player movement
+biggest commit yet! I really locked in the last couple days! List of reworked things:
+
+* Player Movement system and architecture
+* Procedural Terrain art generation
+* Bezier Platform Collision detection
+* Added procedural antennae to the player's head!
+* Some minor things I don't remember...
+
+
+1. Player Movement System + Architecture Rework
+  Old movement was written very clunkily, many if statements and BS logic. Rewrote the WHOLE thing, beginning with removing ALL the old code.
+  Instead of having a method responsible for every action the player can do, now we have a state machine. Essentially have 4 sub-classes in
+  PlayerMovement.java, which are the 4 states the player can find themself in: Ground(), Air(), Dash(), WallSlide(). with the names being
+  self-explanatory. Each state implements a 'PlayerState' interface, which has three methods: enter(), update(), and exit().
+    in the 'enter()' method, all the state-specific things are set. ie for Dash(), you have to set gravity to zero, and momentum to zero,
+    since when dashing you don't get affected by gravity or momentum. Each state has a similar thing happen in their 'enter()' method
+
+    in the 'update()' method, you get all your logic. mainly the state-transitions, and some logic that needs to get checked in order to
+    detect when a state transition is needed. NO physics or movement is happening in update(), since that is delegated to physics_update()
+    belonging to PlayerMovement class. using a bunch of boolea flags, counters etc + the key input the player provides, we can detect when
+    and which actions to perform and when to change state. very cool
+
+    in the 'exit()' method, you get a chance to 'clean up' whatever is left after your state. for example in Dash.exit(), we call the
+    'end_dash()' method, which cleans up things like dash counters, initiates dash cooldown, and others. other states don't use this yet,
+    but who knows what future states might need.
+
+  Overall very useful and easy-ish to adjust (inifinitely easier than before). When more complicated movement besides jumping dashing
+  wall-jumping emerge, we're gonna be happy we did this, since its as easy as adding a new state and its transitions.
+
+2. Procedural Terrain art:
+  this is somewhat minor. I felt thta the edges of procedurally-generated terrain looked bad, so I wanted to add some 'bumpiness'
+  or lumps that protruded PAST the edges of object colliders. this is very simple. you just loop over the pixel array (that already
+  exiested before anyways), and check whether a pixel is full, and its neighbors empty. then, you randomly fill in either none or all of
+  its neighbors. repeat several times and you have organic-ish looking bumps. I'm a big fan of how it looks when the number of iterations
+  is set high, except it occludess the player :(.
+
+3. Bezier platform collision detection:
+  Previously, when you attached a Bezier platform to a moving block, you could not stand on the Bezier without either sinking into it,
+  or being unable to regain your jump (you aren't actually touching the platform on the way down). this was fixed by doing 2 things:
+  
+  a. firstly, put update_colliders at the very end of the Player.java update() block. This allows the player to be displaced based on
+      CURRENT state, not a-frame-ago state, hence fixed partially.
+  b. still sank into platform, so needed to redo Bezier intersection + displacement algorithm. Now, we actually displace the player,
+      by finding line segment they're closest to, and displacing player to just touch said segment. Since Line.dispalce was broken before,
+      needed to rewrite that. Use a dot product-normal approach instead of a distance check, and it works MUCH better + more stable + 
+      can handle weirder bezier shapes.
+
+4. Added procedural antennae to the player.
+  I felt like the player needed something to show the general direction they were travelling / show their motion, similar to madeleines
+  hair in celeste. antenna came to mind since the player kinda already has some, just wanted to make them longer ~ 15 pixels. Began by
+  assuming both antennae behave the same, hence only need one array of vectors to represent both. antenna are represented using a 1D array
+  or world positions that are connected using lines later. additinoally, an array of angles, theta_s, is used to specify the relative angle
+  from the previous to the next vector. These are also correlated to the direction you're facing, so antenna always fall behind the player.
+  Steps:
+  1. initialize theta_s array, and antenna[] array using this theta_s array
+  2. every frame:
+    a. pass down the array theta_s : theta_s[x + 1] = theta_s[x], in order to have a cascading-style antenna motion
+    b. then, go through all antenna[], and linearly interpolate from (player velocity + past vector2 (as a direction)).norm() to new vector
+        (as a direction) using a factor called antenna_t, via 2D rotation. 
+    c. convert directions into world positions.
+    d. loop through all world positions, convert to 2 lines: one from two neighboring positions, one exactly the same just offset sideways
+        to create two antennae. connect the dots!
+  Beautiful antenna that look like they're waving in the 'wind' and respond to player movement and velocity!
+
+This has been one of the biggest updates yet, stuff to do in next one:
+
+* make sure you can't accidentally get SHOVED inside a bezier when a moving bezier collides with another platform and you're stuck in between
+* rework Vector2 class a bit, in order to make functions match SoftBody Vector2 class, and TriangleRendering Test Vector2 class
+  * Using this, can now implement softbodies into the game, by simply copying code over
+* also implement platform momentum interractions with the player, and re-make bounce pads since they suck
+* add background tiles (+ similar background generation to main terrain).
+* create new player animations (exclude antennae), and just in general try to make the game prettier.
+
+* finalize several small PlayerMovement specifications to lock in final movement
+
+* Update LevelEditor to be more UI-friendly (make a side panel etc.)
+.
+.
+.
+
+* START MAKING FIRST AREA! EXCITING its pretty close!
+
